@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Introduction to R &ndash; Syllabus (Draft)</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h1>Introduction to R &ndash; Syllabus (Draft)</h1>
+
+<p>This is an introduction to R programming, with a focus on applications in data analytics. Participants may have prior experience with working with data in other contexts, or with other kinds of programming, but may not necessarily have experience with data analytics or scientific computing.</p>
+
+<h2>Course structure</h2>
+
+<p>The course curriculum will consist of two 2-hr classes devoted to learning the basics of R, and a couple of electives/special topics. For flexibility, the choice, order and number of special topics to cover can be up to the instructor. The initial two class can also be used as a stand-alone course.</p>
+
+<h3>Basics of R</h3>
+
+<ol>
+<li>Introduction to R</li>
+<li>Exploratory data analysis through visualization</li>
+</ol>
+
+<h3>Special topics</h3>
+
+<ul>
+<li>Databases</li>
+<li>Natural language processing</li>
+<li>Statistics and data analysis</li>
+<li>Creating R packages</li>
+<li>Rmarkdown</li>
+<li>Big data</li>
+</ul>
+
+<h2>Course Objectives</h2>
+
+<p>By the end of the <em>Basics of R</em> section, students should achieve:</p>
+
+<ul>
+<li>proficiency in the basic functionality of R, and become comfortable with the features of RStudio</li>
+<li>an understanding of how to handle data using R, specifically how to formulate and answer analytical questions about the data</li>
+<li>knowledge of some of the most common and useful R libraries</li>
+<li>the ability for further independent exploration, relying on package documentation, online help and troubleshooting.</li>
+</ul>
+
+<h2>Class summary</h2>
+
+<h3>Introduction to R</h3>
+
+<ol>
+<li>Illustrate what R can do with a motivating example
+
+<ul>
+<li><code>Orange</code> data set: address simple statistical questions and visualization data.</li>
+</ul></li>
+<li>Introduce basic R objects and syntax
+
+<ul>
+<li>Data structures: lists, vectors, data frames (including factors and numeric features), etc.</li>
+<li>Creating data: assignment operator, explicit definition, reading data from file/URL</li>
+<li>Accessing data: subsetting operations, data.frame columns</li>
+<li>Exploring data: 
+
+<ul>
+<li>view/summarize data using <code>head</code>, <code>summary</code>, <code>str</code>, <code>dim</code>, <code>length</code>, etc.</li>
+<li>basic statistics, <code>mean</code>, <code>cov</code>, <code>quantile</code>, <code>table</code>, <code>unique</code>, etc.</li>
+<li>Logical statements</li>
+<li>subsetting and filtering</li>
+<li>visualization using <code>plot</code>, <code>hist</code>, etc.</li>
+</ul></li>
+<li>Introduce concept of objects and functions.</li>
+<li>Defining functions</li>
+</ul></li>
+<li>Familiarize with RStudio</li>
+<li>Utilities: 
+
+<ul>
+<li>Read/write csv files, read data from URL</li>
+<li>Saving and loading <code>.Rdata</code> files.</li>
+<li>Data/memory management: <code>ls</code>, <code>rm</code>, <code>gc</code></li>
+<li>Writing <code>.R</code> scripts</li>
+<li>OS tools</li>
+<li>String manipulations</li>
+</ul></li>
+<li>Getting help: <code>?</code>, interpreting the documentation </li>
+<li>Errors and Debugging</li>
+</ol>
+
+<h3>Exploratory data analysis</h3>
+
+<ul>
+<li>Manipulating data frames using <code>dplyr</code>: <code>filter</code>, <code>mutate</code></li>
+<li>Explore the data:
+
+<ul>
+<li>Summary statistics (review)</li>
+<li>Visualization using <code>plot</code>, <code>boxplot</code>, <code>hist</code>, etc.</li>
+</ul></li>
+<li>Dealing with <code>NA</code>s</li>
+<li>Fancy packages! The best thing about R is the wide range of freely available packages. 
+
+<ul>
+<li><code>dplyr</code></li>
+<li><code>data.table</code></li>
+<li><code>ggplot2</code></li>
+<li><code>maps</code></li>
+<li><code>rgl</code></li>
+<li><code>Matrix</code></li>
+<li><code>parallel</code>
+Use <code>install.packages(&quot;&lt;package name&gt;&quot;)</code> to install packages.<br/></li>
+</ul></li>
+<li>Visualization using <code>ggplot</code>, <code>ggpairs</code>, etc.</li>
+</ul>
+
+<h3>Special topic: Databases</h3>
+
+<h3>Special topic: Natural Language Processing</h3>
+
+<h3>Special topic: Statistics and data analysis</h3>
+
+<h3>Special topic: Creating R packages</h3>
+
+<h3>Special topic: Rmarkdown</h3>
+
+<h3>Special topic: Big data</h3>
+
+<h3>Classroom mechanics</h3>
+
+<p>Lecture notes will be created using RMarkdown, and be made available to students. Students can follow the class examples and exercises by installing R and the IDE RStudio.</p>
+
+<h2>References</h2>
+
+<ul>
+<li><a href="http://www.ats.ucla.edu/stat/r/seminars/intro.htm">http://www.ats.ucla.edu/stat/r/seminars/intro.htm</a></li>
+</ul>
+
+</body>
+
+</html>
+
